@@ -8,9 +8,9 @@ function aboutPage() {
 
         {/* About  */}
       <div>
-          <h1 className=' px-10 text-5xl font-bold '>About Mindscape.ai </h1>
+          <h1 className=' px-10 text-5xl font-bold '>About MindXcape.ai </h1>
           <div className='text-sm md:text-xl p-2 mt-4  rounded-md shadow-sm leading-4 md:p-4 md:pr-10 md:mx-6 text-gray-500 text-center md:text-start ' >
-            Mindscape.ai is an innovative AI-powered platform that revolutionizes the way people 
+            MindXcape.ai is an innovative AI-powered platform that revolutionizes the way people 
             interact with technology.<br/> Our mission is to empower individuals and businesses by providing 
             cutting-edge AI solutions that enhance productivity, creativity, and decision-making.
           </div>
@@ -52,7 +52,7 @@ function aboutPage() {
             <strong><Lightbulb></Lightbulb></strong>
           </div>
           <p className='px-4 pb-2 text-sm'>
-          Mindscape.ai is committed to ongoing innovation and improvement. 
+          MindXcape.ai is committed to ongoing innovation and improvement. 
           We regularly update our platform with new features, enhancements, and bug fixes. We welcome your feedback and suggestions to help us better serve your needs.
           </p>
         </div>
