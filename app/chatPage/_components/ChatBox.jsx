@@ -30,14 +30,14 @@ function ChatBox({ onSubmit, loading, chatHistory }) {
       typingIndicatorTimeout = setTimeout(() => {
         setShowTypingIndicator(false);
         setShowAIResponse(true);
-      }, 2000); // Show the typing indicator for 3 seconds
+      }, 2000); // Show the typing indicator for 2 seconds
     }
 
     return () => clearTimeout(typingIndicatorTimeout);
   }, [showTypingIndicator, latestResponseIndex, chatHistory.length]);
 
   return (
-    <Card>
+    <Card className='shadow-md'>
       <CardHeader>
         <CardTitle>Chat with your AI Psychologist</CardTitle>
       </CardHeader>
