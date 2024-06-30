@@ -4,7 +4,7 @@ import React from 'react'
 
 function contactPage() {
   return (
-    <div className=' border  p-[6vw]'>
+    <div className=' border max-w-[80vw] m-auto pt-[6vw] px-[6vw]'>
 
     {/* About  */}
   <div>
@@ -23,7 +23,7 @@ function contactPage() {
   <Separator className="my-4" />
 
     {/* Notice */}
-    <div className='text-sm md:text-xl mt-20 rounded-md  bg-slate-100 leading-4 md:pr-10 md:mx-6 text-gray-500 text-center md:text-start ' >
+    <div className='text-sm md:text-xl mt-20 mb-4 rounded-md  bg-slate-100 leading-4 md:pr-10 md:mx-6 text-gray-500 text-center md:text-start ' >
       <div className='flex p-4 text-black text-sm justify-start items-center'>
         <strong   > Note </strong>
         <strong><Lightbulb></Lightbulb></strong>
