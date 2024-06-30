@@ -1,32 +1,34 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { LoaderCircle } from 'lucide-react';
+import { Check, LoaderCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { Textarea } from "@/components/ui/textarea"
+
 
 function ChatBox({ onSubmit, loading, chatHistory }) {
   const [stateDesc, setStateDesc] = useState('');
+  const [userMessage, setUserMessage] = useState('');
   const [showUserMessage, setShowUserMessage] = useState(false);
   const [showTypingIndicator, setShowTypingIndicator] = useState(false);
   const [showAIResponse, setShowAIResponse] = useState(false);
-  const [latestResponseIndex, setLatestResponseIndex] = useState(-1);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(stateDesc);
+    setUserMessage(stateDesc);
     setStateDesc('');
     setShowUserMessage(true);
     setShowTypingIndicator(true);
     setShowAIResponse(false);
-    setLatestResponseIndex(chatHistory.length);
   };
 
   useEffect(() => {
     let typingIndicatorTimeout;
 
-    if (showTypingIndicator && latestResponseIndex === chatHistory.length - 1) {
+    if (showTypingIndicator && chatHistory.length > 0) {
       typingIndicatorTimeout = setTimeout(() => {
         setShowTypingIndicator(false);
         setShowAIResponse(true);
@@ -34,48 +36,52 @@ function ChatBox({ onSubmit, loading, chatHistory }) {
     }
 
     return () => clearTimeout(typingIndicatorTimeout);
-  }, [showTypingIndicator, latestResponseIndex, chatHistory.length]);
+  }, [showTypingIndicator, chatHistory.length]);
 
   return (
     <Card className='p-4 shadow-md'>
       <CardHeader>
-        <CardTitle>Chat with your AI Psychologist</CardTitle>
+        <CardTitle className='mb-2'>Chat with your AI Psychologist</CardTitle>
       </CardHeader>
       <CardContent>
         {chatHistory.map((chat, index) => (
-          <div key={index} className="flex flex-col gap-2 my-3">
-            <div className=" rounded-md p-2">
-              <strong>You:</strong> {chat.user}
-            </div>
+          <div key={index} className="flex flex-col gap-2  ">
+            {showUserMessage && index === chatHistory.length - 1 && (
+              <div className=" rounded-md p-2">
+                <strong>You:</strong> {userMessage}
+              </div>
+            )}
 
-            <div className="bg-slate-100 shadow-md rounded-full px-4 py-2">
-              <strong>Dr:</strong> {chat.ai}
-            </div>
+            {showAIResponse && index === chatHistory.length - 1 && (
+              <div className="bg-slate-100 shadow-md rounded-md px-4 mb-6 py-2">
+                <strong>Dr:</strong> {chat.ai}
+              </div>
+            )}
 
-            {index === chatHistory.length - 1 && showTypingIndicator && (
-              <div className="bg-slate-100 shadow-md rounded-md p-2">
-                <span className="animate-dots"> <strong>thinking...</strong> </span>
+            { showTypingIndicator && index === chatHistory.length - 1 && (
+              <div className="  rounded-md p-2 ">
+                <span className="animate-dots">  </span>
               </div>
             )}
           </div>
         ))}
 
-        <Separator className="my-4" />
+        {/* <Separator className="my-4" /> */}
 
-        <form onSubmit={handleSubmit} className="flex flex-row gap-4 justify-center items-center">
-          <textarea
-            className="w-full border rounded-lg px-4 p-2 mb-2"
-            rows={2}
+        <form onSubmit={handleSubmit} className="grid w-full gap-2  mt-5 ">
+          <Textarea
+            className="w-full   rounded-lg "
+            rows={1}
             value={stateDesc}
             onChange={(e) => setStateDesc(e.target.value)}
             placeholder="Type how are you feeling today here..."
-          ></textarea>
+          ></Textarea>
 
           <Button type="submit">
             {loading ? (
               <>
-                <LoaderCircle className="animate-spin" />
-                AI Responding
+                {/* <LoaderCircle className="animate-spin" /> */}
+                 <Check/>
               </>
             ) : (
               'Send'
