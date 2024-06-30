@@ -4,7 +4,7 @@ import ChatInterface from './_components/ChatInterface';
 
 function chatSection() {
   return (
-    <div className=' md:p-10 '>
+    <div className='max-w-[80vw] m-auto  pt-[4vw] px-[6vw]  '>
 
       <div className='flex justify-center items-center flex-col md:block my-10'>
           <h1 className='font-bold text-3xl  md:text-4xl'> MindXcape.ai </h1>

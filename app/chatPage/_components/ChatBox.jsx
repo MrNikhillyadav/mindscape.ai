@@ -37,24 +37,24 @@ function ChatBox({ onSubmit, loading, chatHistory }) {
   }, [showTypingIndicator, latestResponseIndex, chatHistory.length]);
 
   return (
-    <Card className='shadow-md'>
+    <Card className='p-4 shadow-md'>
       <CardHeader>
         <CardTitle>Chat with your AI Psychologist</CardTitle>
       </CardHeader>
       <CardContent>
         {chatHistory.map((chat, index) => (
           <div key={index} className="flex flex-col gap-2 my-3">
-            <div className="bg-blue-100 shadow-md text-blue-600 rounded-md p-2">
+            <div className=" rounded-md p-2">
               <strong>You:</strong> {chat.user}
             </div>
 
-            <div className="bg-slate-100 shadow-md rounded-md p-2">
+            <div className="bg-slate-100 shadow-md rounded-full px-4 py-2">
               <strong>Dr:</strong> {chat.ai}
             </div>
 
             {index === chatHistory.length - 1 && showTypingIndicator && (
               <div className="bg-slate-100 shadow-md rounded-md p-2">
-                <span className="animate-dots"> <strong>typing...</strong> </span>
+                <span className="animate-dots"> <strong>thinking...</strong> </span>
               </div>
             )}
           </div>

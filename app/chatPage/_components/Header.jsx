@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <div className='max-w-[80vw] m-auto '>
-        <div className="flex border-2 border-red-500 text-xl justify-between font- p-3 md:px-8 items-center text-black " >
+        <div className="flex text-xl justify-between font- p-3 md:px-8 items-center text-black " >
 
             <Link href="/"  className=' text-xl font-medium md:font-bold cursor-pointer'>MindXcape</Link>
             <ul className='hidden md:flex  justify-between items-center p-2 gap-10'>

@@ -4,7 +4,7 @@ import React from 'react'
 
 function contactPage() {
   return (
-    <div className=' border max-w-[80vw] m-auto pt-[6vw] px-[6vw]'>
+    <div className='  max-w-[80vw] m-auto pt-[6vw] px-[6vw]'>
 
     {/* About  */}
   <div>

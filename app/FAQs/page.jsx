@@ -4,7 +4,7 @@ import { Lightbulb } from 'lucide-react'
 
 function FrequentQuestion() {
   return (
-        <div className='max-w-[80vw] m-auto  pt-[3vw] px-[6vw] border  '>
+        <div className='max-w-[80vw] m-auto  pt-[3vw] px-[6vw]  '>
 
             {/* About  */}
             <div className='flex flex-col justify-center items-start gap-2 p-12'>
