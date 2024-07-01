@@ -6,6 +6,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Textarea } from "@/components/ui/textarea"
+import { Skeleton } from "@/components/ui/skeleton"
+
 
 
 function ChatBox({ onSubmit, loading, chatHistory }) {
@@ -53,14 +55,16 @@ function ChatBox({ onSubmit, loading, chatHistory }) {
             )}
 
             {showAIResponse && index === chatHistory.length - 1 && (
-              <div className="bg-slate-100 shadow-md rounded-md px-4 mb-6 py-2">
+              
+                <div className="bg-slate-100 shadow-md rounded-md px-4 mb-6 py-2">
                 <strong>Dr:</strong> {chat.ai}
               </div>
+            
             )}
 
             { showTypingIndicator && index === chatHistory.length - 1 && (
               <div className="  rounded-md p-2 ">
-                <span className="animate-dots">  </span>
+                <span >  <LoaderCircle className="animate-spin" />  </span>
               </div>
             )}
           </div>
@@ -80,11 +84,11 @@ function ChatBox({ onSubmit, loading, chatHistory }) {
           <Button type="submit">
             {loading ? (
               <>
-                {/* <LoaderCircle className="animate-spin" /> */}
-                 <Check/>
+              {/* <LoaderCircle className="animate-spin" /> */}
+             Sent
               </>
             ) : (
-              'Send'
+              'Send Message'
             )}
           </Button>
         </form>
