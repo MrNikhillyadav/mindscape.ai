@@ -56,7 +56,7 @@ function ChatBox({ onSubmit, loading, chatHistory }) {
 
             {showAIResponse && index === chatHistory.length - 1 && (
               
-                <div className="bg-slate-100 shadow-md rounded-md px-4 mb-6 py-2">
+                <div className=" shadow-white shadow-sm border-2 rounded-md px-4 mb-6 py-2">
                 <strong>Dr:</strong> {chat.ai}
               </div>
             
@@ -72,7 +72,7 @@ function ChatBox({ onSubmit, loading, chatHistory }) {
 
         {/* <Separator className="my-4" /> */}
 
-        <form onSubmit={handleSubmit} className="grid w-full gap-2  mt-5 ">
+        <form onSubmit={handleSubmit} className="grid w-full gap-2  mt-8 ">
           <Textarea
             className="w-full   rounded-lg "
             rows={1}
