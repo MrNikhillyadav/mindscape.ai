@@ -1,6 +1,7 @@
 import React from 'react'
 import { Separator } from '@/components/ui/separator'
 import { Lightbulb } from 'lucide-react'
+import Note from '../chatPage/_components/Note'
 
 function FrequentQuestion() {
   return (
@@ -41,19 +42,8 @@ function FrequentQuestion() {
               </div>
 
             </div>
-            {/* <Separator className="my-4" /> */}
 
-            {/* Notice */}
-            <div className='text-sm md:text-xl mx-12 rounded-md  bg-slate-100 leading-4 text-gray-500 text-center md:text-start ' >
-              <div className='flex p-4 text-black text-sm justify-start items-center'>
-                <strong   > Note </strong>
-                <strong><Lightbulb></Lightbulb></strong>
-              </div>
-              <p className='px-4 pb-2 text-sm'>
-              MindXcape.ai is committed to ongoing innovation and improvement. 
-              We regularly update our platform with new features, enhancements, and bug fixes. We welcome your feedback and suggestions to help us better serve your needs.
-              </p>
-            </div>
+         <Note/>
 
         </div>
   )
