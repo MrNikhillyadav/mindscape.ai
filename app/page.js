@@ -3,10 +3,12 @@ import { Lightbulb } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Note from "./chatPage/_components/Note";
+import GetEarlyAccess from './_components/GetEarlyAccess'
 
 export default function Home() {
   return (
-    <div  className=" max-w-[80vw] m-auto ">
+    <>
+     {/* <div  className=" max-w-[80vw] m-auto ">
       <div className="  w-full  flex flex-col justify-center  items-center">
 
             <div className=' flex flex-col justify-center items-center p-4   mt-[20vh]'>
@@ -19,14 +21,17 @@ export default function Home() {
             </div>
 
             <Link href='/chatPage' >
-                <Button className='my-5 mb-20'>Try for free</Button>
-            </Link>
+                 <Button className='my-5 mb-20'>Try for free</Button>
+             </Link>
 
-            <div className='w-[65vw] mt-20  '>
+             <div className='w-[65vw] mt-20  '>
               <Note />
-            </div>
+              </div>
 
-      </div>
-    </div>
+       </div>
+    </div> */}
+    
+    <GetEarlyAccess/>
+    </>
   );
 }
