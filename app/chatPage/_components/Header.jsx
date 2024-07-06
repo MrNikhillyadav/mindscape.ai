@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <div className='max-w-[80vw] m-auto '>
-        <div className="flex text-xl justify-between p-3 md:px-8 items-center" >
+        <div className=" flex text-xl justify-between p-3 md:px-8 items-center" >
 
             <Link href="/"  className=' text-xl font-medium md:font-bold cursor-pointer'>MindXcape</Link>
             <ul className='hidden md:flex  justify-between items-center p-2 gap-10'>
@@ -31,7 +31,7 @@ function Header() {
             </ul>
             
             <ThemeToggleButton/>
-            <div className='text-[1vw] font-medium cursor-pointer '>
+            <div className='hidden md:block text-[1vw] font-medium cursor-pointer '>
                 user.info
             </div>
 

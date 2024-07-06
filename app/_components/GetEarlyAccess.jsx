@@ -68,23 +68,34 @@ export default function GetEarlyAccess() {
 
   return (
     <div className=" max-w-[80vw] m-auto ">
-      <div className="  w-full  flex flex-col justify-center  items-center">
-        <div className=' flex flex-col justify-center items-center p-4   mt-[20vh]'>
-          <h3 className="text-4xl font-bold mb-4">Be the First to Experience the Future of Mental Wellness</h3>
-          <p className="text-lg mx-20 text-slate-500 mb-6">
+      <div className="  w-full  flex flex-col justify-center  px-2 md:px-0 items-center">
+        <div className='  flex  flex-col justify-center items-center md:px-0 md:p-4   ml-4 md:ml-0   mt-10 md:mt-[20vh]'>
+          <h3 className=" text-3xl  lg:px-20  sm:text-4xl md:text-4xl tracking-tighter leading-7 mr-3 md:mr-0 md:leading-9 md:text-start font-bold mb-4">Be the First to Experience the Future of Mental Wellness.</h3>
+          <div className="hidden md:block md:text-lg tracking-wide  md:text-start  lg:mx-20 lg:px-4 lg:text-center text-slate-500  md:mb-6">
             Join our exclusive early access program and be among the first to unlock the power of our AI-powered
             mental health platform. Experience personalized guidance, insightful analytics, and a transformative
             journey towards better well-being.
-          </p>
+          </div>
+          <div className=" md:hidden md:text-lg tracking-wide leading-5 text-sm  md:text-start  lg:mx-20 lg:px-4 lg:text-center text-slate-500  md:mb-6">
+            Join our exclusive early access program and be among the first to unlock the power of our AI-powered
+            mental health platform.
+          </div>
         </div>
 
-        <div className="flex items-center my-5 mb-20">
+        <div className="flex flex-col gap-2 md:gap-0 md:flex-row px-2 md:px-0  md:items-center my-6 mb-10 md:mb-20">
           <Input
             type="email"
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className=" w-[25vw] mr-4"
+            className="hidden md:flex md:w-[25vw] mr-4"
+          />
+          <Input
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="text-start md:hidden  mr-4"
           />
           <Button onClick={handleEmailSubmit} disabled={isButtonDisabled}>
             {emailSent ? (
@@ -109,7 +120,7 @@ export default function GetEarlyAccess() {
           </div>
         )}
 
-        <div className='w-[15vw] border p-1 rounded-full  text-center text-xs mt-[20vh] font-md'>
+        <div className='md:w-[15vw]  rounded-full    text-[15px]  md:my-0 md:text-xs  md:mt-[22vh] text-slate-500 font-md'>
           <p >powered by mindXcape.ai</p>
         </div>
       </div>
