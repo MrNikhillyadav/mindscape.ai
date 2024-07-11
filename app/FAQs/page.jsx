@@ -13,8 +13,8 @@ function FrequentQuestion() {
 
               <div className='text-sm md:text-xl mt-10  rounded-md  leading-4   text-center md:text-start ' >
                     <h1 className='  text-3xl font-bold '>1. What is mindXcape.ai?</h1>
-                    <p className=' text-slate-500 mt-4'>We're dedicated to continuously improving our AI-powered platform to better serve your needs.
-                    Whether you have suggestions,questions, or simply want to share your experience, we're here to listen.</p>
+                    <p className=' text-slate-500 mt-4'>We&apos;re dedicated to continuously improving our AI-powered platform to better serve your needs.
+                    Whether you have suggestions,questions, or simply want to share your experience, we&apos;re here to listen.</p>
               </div>
               <Separator className="my-2" />
               <div className='text-sm md:text-xl mt-5  rounded-md  leading-4  text-center md:text-start ' >
@@ -31,7 +31,7 @@ function FrequentQuestion() {
               <Separator className="my-2" />
               <div className='text-sm md:text-xl mt-5  rounded-md  leading-4 text-center md:text-start ' >
                     <h1 className='  text-3xl font-bold '>4. Is mindXcape.ai a replacement for traditional therapy?</h1>
-                    <p className=' text-slate-500 mt-4'>No, mindXcape.ai is not intended to replace traditional therapy with a licensed mental health professional. It's designed to complement 
+                    <p className=' text-slate-500 mt-4'>No, mindXcape.ai is not intended to replace traditional therapy with a licensed mental health professional. It&apos;s designed to complement 
                     and enhance the therapeutic experience by providing additional support and resources between in-person sessions.</p>
               </div>
               <Separator className="my-2" />

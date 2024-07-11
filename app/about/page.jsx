@@ -23,7 +23,7 @@ function aboutPage() {
        <div className='my-10'>
           <h1 className=' px-10 text-3xl font-bold '>The Mindscape.ai Advantage </h1>
           <div className='text-sm md:text-xl p-2  leading-4 md:p-4 md:pr-10 md:mx-6 text-gray-500 text-center md:text-start ' >
-          Mindscape.ai is designed to be your personal AI assistant, tailored to your unique needs and preferences. Whether you're a busy professional,
+          Mindscape.ai is designed to be your personal AI assistant, tailored to your unique needs and preferences. Whether you&apos;re a busy professional,
            a creative thinker, or an aspiring entrepreneur, our platform offers a suite of powerful tools to help you achieve your goals.
           </div>
           </div> 
