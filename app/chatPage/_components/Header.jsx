@@ -1,10 +1,11 @@
 "use client"
-import React, { useEffect } from 'react'
+import React, { useEffect,useState } from 'react'
 // import { UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import ThemeToggleButton from './ThemeToggleButton'
+// import { Button } from '@/components/ui/button';
 
 function Header() {
   const pathname = usePathname(); //usePathname hook tell the active bath.
@@ -12,6 +13,9 @@ function Header() {
   useEffect(() => {
     console.log(pathname);
   }, [pathname]);
+
+  
+
 
   return (
     <div className='max-w-[80vw] m-auto '>
@@ -27,9 +31,12 @@ function Header() {
           <Link href="/FAQs" className='text-[1vw] font-medium cursor-pointer hover:font-bold  transition-all'>FAQs</Link>
         </ul>
         <ThemeToggleButton/>
-        <div className='hidden md:block text-[1vw] font-medium cursor-pointer '>
+        
+        <div className='hidden md:block  text-[1vw] font-medium cursor-pointer '>
           user.info
         </div>
+         
+        
       </div>
     </div>
   )
