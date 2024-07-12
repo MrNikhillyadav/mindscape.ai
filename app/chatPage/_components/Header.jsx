@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <div className='max-w-[80vw] m-auto '>
-      <div className=" flex text-xl justify-between p-3 md:px-8 items-center" >
+      <div className=" flex text-xl justify-between p-3 md:p-0 md:px-8 items-center" >
           {/* <Image src={'/logo.png'} width={90} height={90} />  */}
         <Link href="/"  className=' text-xl font-medium md:font-bold cursor-pointer'>
             MindXcape
