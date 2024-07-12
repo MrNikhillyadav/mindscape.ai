@@ -1,6 +1,16 @@
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
+/* 
+  @font-face {
+    font-family: nb;
+    src: url('./font1.woff2');
+}
+@font-face {
+    font-family: rejouice;
+    src: url('./font2.woff2');
+} */
+
 
   @layer base {
     :root {

@@ -16,7 +16,10 @@ function Header() {
   return (
     <div className='max-w-[80vw] m-auto '>
       <div className=" flex text-xl justify-between p-3 md:px-8 items-center" >
-        <Link href="/"  className=' text-xl font-medium md:font-bold cursor-pointer'>MindXcape</Link>
+          {/* <Image src={'/logo.png'} width={90} height={90} />  */}
+        <Link href="/"  className=' text-xl font-medium md:font-bold cursor-pointer'>
+            MindXcape
+        </Link>
         <ul className='hidden md:flex  justify-between items-center p-2 gap-10'>
           {/* <Link href='/chatPage' className='text-[1vw] font-medium cursor-pointer hover:font-bold   transition-all'>Chat</Link> */}
           <Link href="/about" className='text-[1vw] font-medium cursor-pointer hover:font-bold  transition-all'>About</Link>
