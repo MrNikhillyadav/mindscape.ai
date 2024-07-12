@@ -70,9 +70,17 @@ export default function GetEarlyAccess() {
     <div className=" max-w-[80vw] m-auto ">
       <div className="  w-full  flex flex-col justify-center  px-2 md:px-0 items-center">
         <div className='  flex   flex-col justify-center items-center md:px-0 md:p-4   ml-4 md:ml-0   mt-10 md:mt-[16vh]'>
-          <h3 className=" text-3xl   lg:px-20  sm:text-4xl md:text-6xl  tracking-tight md:tracking-normal leading-7 md:leading-0  mr-3 md:mr-0   font-bold mb-6">
-            <span className=' md:ml-14 pb-8 '>Be the First to Experience</span>  <br></br> the Future of Mental Wellness.
-          </h3>
+
+        <h3 className=" text-3xl flex flex-col justify-center items-center gap-0 lg:px-20  sm:text-4xl md:text-[62px]  tracking-tight md:tracking-normal leading-[6vh] md:leading-[7vh]  mr-3 md:mr-0   font-bold mb-8">
+          <span> <span className='bg-yellow-300 text-black px-1 rounded-sm'>Be the First&nbsp;</span> to Experience</span> 
+          the Future of Mental Wellness.
+        </h3>
+        {/* <h3 className=" text-3xl flex flex-col justify-center items-center gap-[-10vh] lg:px-20  sm:text-4xl md:text-[60px]  tracking-tight md:tracking-normal leading-7 md:leading-0  mr-3 md:mr-0   font-bold mb-6">
+          <span> <span className='bg-yellow-300 shadow-md  text-black  '>Be the First&nbsp;</span> to Experience</span> <br></br>
+          <span>the Future of <span className='bg-yellow-300 shadow-md px-2 text-black '>Mental Wellness.</span></span>
+        </h3> */}
+        
+          
           <div className="hidden md:block md:text-lg   md:text-start  lg:mx-20 lg:px-4 lg:text-center text-slate-500  ">
             Join our exclusive early access program and be among the first to unlock the power of our AI-powered
             mental health platform. Experience personalized guidance, insightful analytics, and a transformative
@@ -90,7 +98,7 @@ export default function GetEarlyAccess() {
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="hidden md:flex  md:w-[30vw] mr-4"
+            className="hidden md:flex shadow-sm  md:w-[30vw] mr-4"
           />
           <Input
             type="email"
