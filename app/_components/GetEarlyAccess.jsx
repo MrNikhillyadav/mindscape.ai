@@ -110,7 +110,7 @@ export default function GetEarlyAccess() {
           <Button  onClick={handleEmailSubmit} disabled={isButtonDisabled}>
             {emailSent ? (
               <>
-                <Check className="mr-2 h-4 w-4 " />
+                {/* <Check className="mr-2 h-4 w-4 " /> */}
                  Request Sent
               </>
             ) : (
@@ -124,13 +124,13 @@ export default function GetEarlyAccess() {
         )}
 
         {showAlert && (
-          <div className="fixed top-[10vh] right-[3vh] bg-green-500 text-white px-4 py-2 rounded-full flex items-center">
+          <div className="fixed top-[10vh] right-[3vh] bg-green-400 text-white px-4 py-2 rounded-full flex items-center">
             <Check className=" mr-2 h-4 w-4" />
             Sent
           </div>
         )}
 
-        <div className='md:w-[15vw]  rounded-full    text-[15px]  md:my-0 md:text-xs  md:mt-[26vh] text-slate-500 font-md'>
+        <div className='md:w-[15vw]  rounded-full    text-[15px]  md:my-0 md:text-xs  md:mt-[18vh] text-slate-500 font-md'>
           <p >powered by mindXcape.ai</p>
         </div>
       </div>
