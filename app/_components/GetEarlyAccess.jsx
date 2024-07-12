@@ -71,17 +71,13 @@ export default function GetEarlyAccess() {
       <div className="  w-full  flex flex-col justify-center  px-2 md:px-0 items-center">
         <div className='  flex   flex-col justify-center  items-center md:px-0 md:p-4   ml-4 md:ml-0   mt-10 md:mt-[12vh]'>
 
-        <h3 className=" text-[35px] font-semibold md:bold flex flex-col  justify-center items-center gap-0 lg:px-20  sm:text-4xl md:text-[60px]  tracking- md:tracking-normal leading-[4.8vh] md:leading-[9vh]  mr-3 md:mr-0  mb-4 md:mb-2">
-          <span> <span className='bg-yellow-300 text-black px-1 '>Be the First&nbsp;</span> to Experience</span> 
-          the Future of Mental Wellness.
-        </h3>
-        {/* <h3 className=" text-3xl flex flex-col justify-center items-center gap-[-10vh] lg:px-20  sm:text-4xl md:text-[60px]  tracking-tight md:tracking-normal leading-7 md:leading-0  mr-3 md:mr-0   font-bold mb-6">
-          <span> <span className='bg-yellow-300 shadow-md  text-black  '>Be the First&nbsp;</span> to Experience</span> <br></br>
-          <span>the Future of <span className='bg-yellow-300 shadow-md px-2 text-black '>Mental Wellness.</span></span>
-        </h3> */}
-        
+
+        <div className=" text-[35px]  font-semibold md:bold  lg:px-20  sm:text-4xl md:text-[50px] lg:text-[50px]  md:tracking-normal leading-[4.8vh] md:leading-[9vh] lg:leading-[6.5vh]  mr-3 md:mr-0  mb-4 md:mb-4">
+          <h1 className=" p-0"> <span >Be the First&nbsp;</span> to Experience</h1> 
+          <h1> the Future of <span className='bg-yellow-300 text-black px-1 ' > Mental Wellness.</span></h1>
+        </div>
           
-          <div className="hidden w-[70vw]  md:block md:text-[20px] leading-6   md:text-start  lg:mx-25 lg:px-20 lg:text-center text-slate-500  ">
+          <div className="hidden w-[70vw] lg:w-[70vw] md:block md:text-[20px] leading-6   md:text-start  lg:mx-25 lg:px-20 lg:text-center text-slate-500  ">
             Join our exclusive early access program and be among the first to unlock the power of our AI-powered
             mental health platform. Experience personalized guidance, insightful analytics, and a transformative
             journey towards better well-being.
@@ -130,7 +126,7 @@ export default function GetEarlyAccess() {
           </div>
         )}
 
-        <div className='md:w-[15vw]  rounded-full    text-[15px]  md:my-0 md:text-xs  md:mt-[18vh] text-slate-500 font-md'>
+        <div className='md:w-[15vw]  rounded-full    text-[15px]  md:my-0 md:text-xs  md:mt-[26vh] text-slate-500 font-md'>
           <p >powered by mindXcape.ai</p>
         </div>
       </div>
