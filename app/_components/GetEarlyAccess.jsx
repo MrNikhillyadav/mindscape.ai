@@ -72,7 +72,7 @@ export default function GetEarlyAccess() {
         <div className='  flex   flex-col justify-center  items-center md:px-0 md:p-4   ml-4 md:ml-0   mt-10 md:mt-[12vh]'>
 
 
-        <div className=" text-[35px]  font-semibold md:bold  lg:px-20  sm:text-4xl md:text-[50px] lg:text-[50px]  md:tracking-normal leading-[4.8vh] md:leading-[9vh] lg:leading-[6.5vh]  mr-3 md:mr-0  mb-4 md:mb-4">
+        <div className=" text-[35px]  font-semibold md:bold  lg:px-20  sm:text-4xl md:text-[50px] lg:text-[50px]  md:tracking-normal leading-[4.8vh] md:leading-[9vh] lg:leading-[7.5vh]  mr-3 md:mr-0  mb-4 md:mb-4">
           <h1 className=" p-0"> <span >Be the First&nbsp;</span> to Experience</h1> 
           <h1> the Future of <span className='bg-yellow-300 text-black px-1 ' > Mental Wellness.</span></h1>
         </div>
@@ -103,7 +103,7 @@ export default function GetEarlyAccess() {
             onChange={(e) => setEmail(e.target.value)}
             className="text-start md:hidden  mr-4"
           />
-          <Button onClick={handleEmailSubmit} disabled={isButtonDisabled}>
+          <Button  onClick={handleEmailSubmit} disabled={isButtonDisabled}>
             {emailSent ? (
               <>
                 <Check className="mr-2 h-4 w-4 " />
