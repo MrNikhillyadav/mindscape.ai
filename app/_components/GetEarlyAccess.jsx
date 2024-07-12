@@ -71,7 +71,7 @@ export default function GetEarlyAccess() {
       <div className="  w-full  flex flex-col justify-center  px-2 md:px-0 items-center">
         <div className='  flex   flex-col justify-center items-center md:px-0 md:p-4   ml-4 md:ml-0   mt-10 md:mt-[16vh]'>
 
-        <h3 className=" text-3xl flex flex-col justify-center items-center gap-0 lg:px-20  sm:text-4xl md:text-[62px]  tracking-tight md:tracking-normal leading-[6vh] md:leading-[7vh]  mr-3 md:mr-0   font-bold mb-8">
+        <h3 className=" text-3xl flex flex-col justify-center items-center gap-0 lg:px-20  sm:text-4xl md:text-[62px]  tracking-tight md:tracking-normal leading-[6vh] md:leading-[9vh]  mr-3 md:mr-0   font-bold mb-8">
           <span> <span className='bg-yellow-300 text-black px-1 rounded-sm'>Be the First&nbsp;</span> to Experience</span> 
           the Future of Mental Wellness.
         </h3>
@@ -81,7 +81,7 @@ export default function GetEarlyAccess() {
         </h3> */}
         
           
-          <div className="hidden md:block md:text-lg   md:text-start  lg:mx-20 lg:px-4 lg:text-center text-slate-500  ">
+          <div className="hidden md:block md:text-[20px] leading-6   md:text-start  lg:mx-20 lg:px-4 lg:text-center text-slate-500  ">
             Join our exclusive early access program and be among the first to unlock the power of our AI-powered
             mental health platform. Experience personalized guidance, insightful analytics, and a transformative
             journey towards better well-being.
@@ -130,7 +130,7 @@ export default function GetEarlyAccess() {
           </div>
         )}
 
-        <div className='md:w-[15vw]  rounded-full    text-[15px]  md:my-0 md:text-xs  md:mt-[22vh] text-slate-500 font-md'>
+        <div className='md:w-[15vw]  rounded-full    text-[15px]  md:my-0 md:text-xs  md:mt-[18vh] text-slate-500 font-md'>
           <p >powered by mindXcape.ai</p>
         </div>
       </div>
