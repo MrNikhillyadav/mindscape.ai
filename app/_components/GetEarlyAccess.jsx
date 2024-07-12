@@ -69,9 +69,11 @@ export default function GetEarlyAccess() {
   return (
     <div className=" max-w-[80vw] m-auto ">
       <div className="  w-full  flex flex-col justify-center  px-2 md:px-0 items-center">
-        <div className='  flex  flex-col justify-center items-center md:px-0 md:p-4   ml-4 md:ml-0   mt-10 md:mt-[20vh]'>
-          <h3 className=" text-3xl  lg:px-20  sm:text-4xl md:text-4xl tracking-tighter leading-7 mr-3 md:mr-0 md:leading-9 md:text-start font-bold mb-4">Be the First to Experience the Future of Mental Wellness.</h3>
-          <div className="hidden md:block md:text-lg tracking-wide  md:text-start  lg:mx-20 lg:px-4 lg:text-center text-slate-500  md:mb-6">
+        <div className='  flex   flex-col justify-center items-center md:px-0 md:p-4   ml-4 md:ml-0   mt-10 md:mt-[16vh]'>
+          <h3 className=" text-3xl   lg:px-20  sm:text-4xl md:text-6xl  tracking-tight md:tracking-normal leading-7 md:leading-0  mr-3 md:mr-0   font-bold mb-6">
+            <span className=' md:ml-14 pb-8 '>Be the First to Experience</span>  <br></br> the Future of Mental Wellness.
+          </h3>
+          <div className="hidden md:block md:text-lg   md:text-start  lg:mx-20 lg:px-4 lg:text-center text-slate-500  ">
             Join our exclusive early access program and be among the first to unlock the power of our AI-powered
             mental health platform. Experience personalized guidance, insightful analytics, and a transformative
             journey towards better well-being.
@@ -88,7 +90,7 @@ export default function GetEarlyAccess() {
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="hidden md:flex md:w-[25vw] mr-4"
+            className="hidden md:flex  md:w-[30vw] mr-4"
           />
           <Input
             type="email"
