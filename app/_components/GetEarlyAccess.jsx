@@ -34,7 +34,11 @@ export default function GetEarlyAccess() {
       // Save the email to the database
       await db.insert(UserEmail).values({
         email: email,
+        createdBy: 'user', // Replace with the actual user's identifier
+        createdAt: new Date().toISOString(),
+        mockId: 'mock-id-1', // Replace with a unique identifier
       });
+
 
       // Print the email to the console
       console.log("Email:", email);

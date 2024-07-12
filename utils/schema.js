@@ -15,5 +15,7 @@ export const ChatConversation=pgTable('chatconversation',{
 export const UserEmail = pgTable('user_emails', {
   id: serial('id').primaryKey(),
   email: varchar('email', { length: 255 }).notNull(),
+  createdBy:varchar('createdBy').notNull(),
   createdAt:varchar('createdAt'),
+  mockId:varchar('mockId').notNull()
 });
