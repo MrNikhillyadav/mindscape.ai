@@ -3,12 +3,11 @@ import { Lightbulb } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Note from "./chatPage/_components/Note";
-import GetEarlyAccess from './_components/GetEarlyAccess'
 
 export default function Home() {
   return (
-    <>
-     {/* <div  className=" max-w-[80vw] m-auto ">
+   
+      <div  className=" max-w-[80vw] m-auto ">
       <div className="  w-full  flex flex-col justify-center  items-center">
 
             <div className=' flex flex-col justify-center items-center p-4   mt-[20vh]'>
@@ -29,9 +28,7 @@ export default function Home() {
               </div>
 
        </div>
-    </div> */}
+    </div> 
     
-    <GetEarlyAccess/>
-    </>
   );
 }
