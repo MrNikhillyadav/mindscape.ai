@@ -18,7 +18,7 @@ export default function Home() {
             </div>
 
             <Link href='/chatPage' className="outline-none" >
-                 <Button >Try for free</Button>
+                 <Button >Click to chat now</Button>
              </Link>
 
             
