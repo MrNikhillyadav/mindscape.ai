@@ -1,12 +1,8 @@
 "use client"
 import React, { useEffect,useState } from 'react'
-// import { UserButton } from '@clerk/nextjs'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import ThemeToggleButton from './ThemeToggleButton'
-import { Button } from '@/components/ui/button'
-// import { Button } from '@/components/ui/button';
 
 function Header() {
   const pathname = usePathname(); //usePathname hook tell the active bath.
@@ -15,13 +11,10 @@ function Header() {
     console.log(pathname);
   }, [pathname]);
 
-  
-
-
   return (
     <div className='max-w-[80vw] m-auto '>
       <div className=" flex text-xl justify-between p-3 md:p-0 md:px-8 items-center" >
-          {/* <Image src={'/logo.png'} width={90} height={90} />  */}
+
         <Link href="/"  className=' text-xl font-medium md:font-bold cursor-pointer'>
             MindXcape
         </Link>
@@ -37,11 +30,10 @@ function Header() {
               <ThemeToggleButton/>
               
               <div className='hidden md:block  text-[1vw] font-medium cursor-pointer '>
-                Join WaitList
+                Signup
               </div>
         </div>
          
-        
       </div>
     </div>
   )

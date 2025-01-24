@@ -1,9 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./chatPage/_components/Header";
-import { Separator } from '@/components/ui/separator';
 import { ThemeProvider } from "./ThemeProvider";
-import localFont from 'next/font/local'
 
 
 
@@ -20,7 +18,6 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ThemeProvider>
           <Header />
-          <Separator />
           <div>{children}</div>
         </ThemeProvider>
       </body>

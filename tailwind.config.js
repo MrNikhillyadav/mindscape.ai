@@ -1,6 +1,10 @@
-/** @type {import('tailwindcss').Config} */
+const  {default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+darkMode: ["class"],
+
+/** @type {import('tai
+ * lwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
   content: [
     './pages/**/*.{js,jsx}',
     './components/**/*.{js,jsx}',
@@ -70,8 +74,21 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        aurora: "aurora 60s linear infinite",
+      },
+      keyframes: {
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
       },
     },
+    
   },
   plugins: [require("tailwindcss-animate")],
 }
+
