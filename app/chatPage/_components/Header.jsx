@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <div className='max-w-[80vw] m-auto py-2 border rounded-lg mt-2'>
-      <div className=" flex text-xl justify-between p-3 md:p-0 md:px-8 items-center" >
+      <div className=" flex text-xl justify-between  p-3 md:p-0 md:px-8 items-center" >
 
         <Link href="/"  className=' text-xl font-medium md:font-bold cursor-pointer'>
             MindXcape

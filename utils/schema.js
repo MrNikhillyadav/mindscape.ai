@@ -10,8 +10,6 @@ export const ChatConversation=pgTable('chatconversation',{
 })  
 
 // new table to capture emails early access users
-
-
 export const UserEmail = pgTable('user_emails', {
   id: serial('id').primaryKey(),
   email: varchar('email', { length: 255 }).notNull(),
