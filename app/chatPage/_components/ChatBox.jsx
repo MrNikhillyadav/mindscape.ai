@@ -22,7 +22,7 @@ function ChatBox({ onSubmit, loading, chatHistory }) {
     setStateDesc('');
     setShowUserMessage(true);
     setShowTypingIndicator(true);
-    setShowAIResponse(false);
+    setShowAIResponse(true);
   };
 
   useEffect(() => {
@@ -68,7 +68,6 @@ function ChatBox({ onSubmit, loading, chatHistory }) {
           </div>
         ))}
 
-        {/* <Separator className="my-4" /> */}
 
         <form onSubmit={handleSubmit} className="grid w-full gap-2  mt-8 ">
           <Textarea
