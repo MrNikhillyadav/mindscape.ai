@@ -10,7 +10,7 @@ function Note() {
             <strong><Lightbulb></Lightbulb></strong>
           </div>
           <p className='px-4 pb-2  text-sm'>
-          MindXcape.ai is committed to ongoing innovation and improvement. 
+          MindXcape is committed to ongoing innovation and improvement. 
           We regularly update our platform with new features, enhancements, and bug fixes. 
           We welcome your feedback and suggestions to help us better serve your needs.
           </p>
