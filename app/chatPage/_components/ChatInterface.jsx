@@ -1,5 +1,4 @@
 "use client";
-import { insert, del } from 'drizzle-orm';
 import React, { useState } from 'react';
 import { db } from '@/utils/db';
 import { ChatConversation } from '@/utils/schema';
@@ -8,7 +7,7 @@ import ChatBox from './ChatBox';
 
 function ChatInterface() {
   const [loading, setLoading] = useState(false);
-  const [jsonResponse, setJsonResponse] = useState(null);
+  // const [jsonResponse, setJsonResponse] = useState(null);
   const [chatHistory, setChatHistory] = useState([]);
 
   const handleSubmit = async (stateDesc) => {
@@ -30,18 +29,16 @@ function ChatInterface() {
     try {
       const result = await chatSession.sendMessage(Inputprompt);
       const ChatJsonResp = result.response.text().replace('```json', '').replace('```', '');
-      const jsonData = JSON.parse(ChatJsonResp);
-      const aiResponse = jsonData.message;
+      console.log('ChatJsonResp: ', ChatJsonResp);
+      // const jsonData = JSON.parse(ChatJsonResp);
+      const aiResponse = ChatJsonResp;
 
-      // Insert the user's state description into the database
       await db.insert(ChatConversation).values({
         stateDesc: stateDesc,
-        createdBy: 'user', // Replace with the actual user's identifier
+        createdBy: 'user', 
         createdAt: new Date().toISOString(),
-        mockId: 'mock-id-1', // Replace with a unique identifier
+        mockId: 'mock-id-1', 
       });
-
-      // Update the chat history
       setChatHistory([...chatHistory, { user: stateDesc, ai: aiResponse }]);
 
       setLoading(false);
