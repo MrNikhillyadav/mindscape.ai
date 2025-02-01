@@ -9,8 +9,8 @@ export default function Home() {
       <div className="  w-full  flex flex-col justify-center  items-center">
 
             <div className=' flex flex-col justify-center items-center p-4   mt-[12vh]'>
-                  <h2  className="  font-semibold tracking-tight py-4 text-6xl">Redefine Your Mental Wellness</h2>
-                  <div className=" text-center mx-24 px-10 leading-tight  text-gray-500 text-md">
+                  <h2  className="  font-semibold tracking-tight py-4 text-center text-6xl">Redefine Your Mental Wellness</h2>
+                  <div className=" hidden md:block text-center md:mx-24 px-10 leading-tight  text-gray-500 text-md">
                       Unlock mental clarity with our AI-Psychologist. Share your thoughts, receive personalized guidance, 
                       and find support anytime, anywhere.
                       Your journey to better well-being starts here.
